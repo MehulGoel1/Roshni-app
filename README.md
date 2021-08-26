@@ -1,1 +1,1 @@
-# Roshni-currency-recognizer-
+# Roshni-app
