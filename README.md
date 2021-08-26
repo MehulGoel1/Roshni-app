@@ -11,7 +11,7 @@ While trying the above approach, I realized that it would be better to have the 
 ![alt text](https://github.com/MehulGoel1/Roshni-app/blob/main/images/Screenshot_8.png)
 
 
-After a quick test of the above approach which passed well, I wanted to augment the image data. As there weren't too many scenarios possible in the real world usage I applied only a few image augmentation techniques accommodating the following scenarios and all combinations of them: different brightness, hue of the camera flash, shaky and blurry picture, and the note at different angles in the picture. I had to click more pictures in outdoor lighting and in darkness with the flash on, as all my pictures until then were taken in indoor lighting and I could not simulate the other two scenarios well enough using any data augmentation libraries' functions. 
+After a quick test of the above approach which passed well, I wanted to augment the image data. As there weren't too many scenarios possible in the real world usage I applied only a few image augmentation techniques accommodating the following scenarios and all combinations of them: different brightness, hue of the camera flash, shaky and blurry picture, and the note at different angles in the picture. To augment for different angles I had to click more pictures in outdoor lighting and in darkness with the flash on, as all my pictures until then were taken in indoor lighting and I could not simulate the other two scenarios well enough using any data augmentation libraries' functions. 
 
-I could achieve 98% accuracy 
+I could achieve 90% accuracy 
 
