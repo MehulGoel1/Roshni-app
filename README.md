@@ -2,7 +2,7 @@
 
 This is an Android application that recognizes the denomination of Indian currency notes using a smartphone camera. This has been designed to primarily assist visually impaired people in identifying Indian currency notes. Please give it a try, here is the playstore link to it: https://play.google.com/store/apps/details?id=com.Roshni.ipsa.myapplication
 
-My approach of training the weights 
+# My approach of training the weights 
 
 The initial too ambitious but also minimum work approach failed quickly. It was to identify the rupee symbol using optical character recognition (OCR) as the rupee symbol is recognized as a digital symbol but this failed as it was not being recognized in any direction other than upright or when there was any blurring or overlay of any shade. Also I realized that when a note is held in a folded position the rupee symbol might not even be visible. Then there was a quick testing of the idea to use an object recognition model YOLO v2 to detect the rupee symbol and then because the denomination is written close to this symbol, have the OCR run on those few digits but this too ran into the same problems and the same would have happened with running OCR on the whole picture so it was not worth trying that. 
 
