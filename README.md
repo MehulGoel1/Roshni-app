@@ -8,8 +8,8 @@ The initial too ambitious but also minimum work approach failed quickly. It was 
 
 While trying the above approach, I realized that it would be better to have the whole note be treated as an object for object recognition to run on. And while clicking more pictures of the currency notes I realized that I should help object recognition by giving it more than one object to recognize in a frame. So I split each side of each note into 4 sections (depiction in the pdf). This increased manual work but was worth it. I was initially thinking of making 8 sections on each side but then decided to try a 4 section approach first and it did turn out to be enough. This was a better approach because sometimes people hold the note in a folded position and no one folds the note horizontally so that was another reason to not go with the 8 section approach. So this resulted in the creation of 8 classes per note (4 for the front side and 4 for the back). I then annotated the pictures (having a random background and a note in the foreground) with coordinates of the object present in it and its class from my 80 classes (because I had 8 types of denominations).
 
-![alt text](https://github.com/MehulGoel1/Roshni-app/blob/main/images/Screenshot_8.png)
-
+![alt text](https://github.com/MehulGoel1/Roshni-app/blob/main/images/Screenshot_12.png)
+![alt text](https://github.com/MehulGoel1/Roshni-app/blob/main/images/Screenshot_11.png)
 
 After a quick test of the above approach which passed well, I wanted to augment the image data. As there weren't too many scenarios possible in the real world usage I applied only a few image augmentation techniques accommodating the following scenarios and all combinations of them: different brightness, hue of the camera flash, shaky and blurry picture, and the note at different angles in the picture. To augment for different angles I had to click more pictures in outdoor lighting and in darkness with the flash on, as all my pictures until then were taken in indoor lighting and I could not simulate the other two scenarios well enough using any data augmentation libraries' functions. 
 
